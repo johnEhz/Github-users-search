@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  padding: 12px;
+  background-color: #172442;
+}
+
+.App {
+  max-width: 700px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+header {
+  font-weight:700;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color:rgb(194, 195, 195);
+}
+
+form {
+  padding: 8px;
+  padding-left: 20px;
+  max-width: 100%;
+  background-color: #141C2F;
+  height: 3.2rem;
+  display: flex;
+  border-radius: 18px;
+  justify-content: space-between;
+  align-items: center;
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+
+form input {
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  background-color: transparent;
+  margin-left: 5px;
+  color: aliceblue;
+  border: none;
+  outline: none;
+  letter-spacing: 1.7px;
+}
+
+form input:active {
+  border: none;
+}
+
+form input::placeholder {
+  color: rgb(224, 224, 224);
+}
+
+form button {
+  font-size: 15px;
+  color: aliceblue;
+  background-color: rgb(55, 149, 255);
+  border-radius: 12px;
+  height: 100%;
+  width: 10rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgb(32, 136, 255);
+}
+
+form button:active {
+  background-color: rgb(23, 112, 213);
+}
+
+.search-item {
+  color:rgb(196, 196, 196)
 }
